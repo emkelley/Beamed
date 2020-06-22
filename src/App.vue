@@ -17,11 +17,11 @@ body {
   overflow: hidden;
 }
 #app {
-  background: rgb(2, 4, 20);
-  background: linear-gradient(
-    0deg,
-    rgba(2, 4, 20, 1) 0%,
-    rgba(3, 7, 34, 1) 100%
+  background: rgb(2, 10, 37);
+  background: radial-gradient(
+    circle,
+    rgba(2, 10, 37, 1) 0%,
+    rgba(1, 7, 28, 1) 100%
   );
   height: 100vh;
   margin: 0;

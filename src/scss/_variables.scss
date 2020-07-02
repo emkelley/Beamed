@@ -1,0 +1,26 @@
+* {
+  font-family: 'Nunito Sans', sans-serif !important;
+}
+// Brand Colors
+$magenta: #ec008c;
+$navy: #020a25;
+
+// Plans
+$plan-free: #b1b4c1;
+$plan-plus: #2d9cdb;
+$plan-business: #a000ec;
+
+// Text
+$text-light: #f8f8ff;
+$text-dark: #525f7f;
+
+// Fonts
+$font-system-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol';
+
+.va {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

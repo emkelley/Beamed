@@ -46,7 +46,7 @@ Upload your file securely and share your file’s private link."
               <router-link
                 to="/send"
                 class="button is-light is-outlined is-rounded is-medium"
-                >How it Works</router-link
+                >Learn More</router-link
               >
             </div>
             <div class="column hero-form">

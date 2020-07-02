@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Beamed logo" src="./assets/Logo_White.svg" width="500px" />
+    <router-view></router-view>
   </div>
 </template>
 

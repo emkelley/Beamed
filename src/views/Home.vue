@@ -11,7 +11,7 @@ Upload your file securely and share your file’s private link."
     />
     <section class="hero is-large">
       <div class="hero-head">
-        <NavbarMain />
+        <TheNavbar fixed="true" transparent="true" />
       </div>
       <div class="hero-body">
         <div class="container hero-helper">
@@ -87,7 +87,7 @@ Upload your file securely and share your file’s private link."
     </section>
     <section class="what-is">
       <div class="container">
-        <nav class="level">
+        <nav class="level is-mobile">
           <div class="level-item has-text-centered">
             <div>
               <p class="heading">Tweets</p>
@@ -157,12 +157,12 @@ Upload your file securely and share your file’s private link."
 
 <script>
 import { VueTyper } from 'vue-typer'
-import NavbarMain from '@/components/global/NavbarMain.vue'
+import TheNavbar from '@/components/global/TheNavbar.vue'
 
 export default {
   name: 'Home',
   components: {
-    NavbarMain,
+    TheNavbar,
     VueTyper
   },
   data() {
@@ -178,7 +178,7 @@ h1 {
   color: $magenta;
 }
 .hero {
-  margin-top: -52px;
+  margin-top: -5rem;
   background: url('../assets/images/stars.png'), #000411;
   .hero-helper {
     padding-top: 52px;
@@ -241,19 +241,47 @@ h1 {
 }
 .hero-form {
   padding: 1rem;
+  text-align: center;
   .form-wrapper {
     background: $magenta;
     padding: 2rem;
     border-radius: 15px;
   }
+  input::placeholder {
+    color: $text-light;
+  }
   .subtitle {
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 0.25rem;
   }
   .heading {
     margin-bottom: 1.5rem;
     font-weight: 600;
+    color: $text-light;
+    font-weight: 800 !important;
+  }
+}
+////////////////////////
+//// Mobile Styling ////
+////////////////////////
+
+// 768px and smaller
+@media only screen and (max-width: 48em) {
+  .hero-body {
+    padding: 4rem 3rem !important;
+    .title {
+      font-size: 1.75rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    .hero-form {
+      display: none;
+    }
+    .button {
+      font-size: 1rem;
+    }
   }
 }
 </style>
